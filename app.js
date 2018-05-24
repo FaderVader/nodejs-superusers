@@ -10,6 +10,7 @@ var dataRouter = require('./routes/data');
 
 // TODO: /products
 var productRouter = require('./routes/product');
+
 var app = express();
 
 // view engine setup
