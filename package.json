@@ -1,0 +1,45 @@
+{
+  "name": "nodejsapp",
+  "version": "0.0.1",
+  "private": true,
+  "port": "1234",
+  "sqlserver": {
+    "userName": "",
+    "password": "",
+    "server": "",
+    "options": {
+      "database": "",
+      "encrypt": true
+    }
+  },
+  "scripts": {
+    "prestart": "npm install",
+    "start": "npm run start2",
+    "start1": "node ./bin/www",
+    "start2": "nodemon ./bin/www",
+    "start3": "pm2 start ./bin/www --name nodejsapp -i 2"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "hbs": "~4.0.1",
+    "http-errors": "~1.6.2",
+    "morgan": "~1.9.0",
+    "tedious": "~2.6.1"
+  },
+  "optionalDependencies": {
+    "nodemon": "^1.17.5",
+    "pm2": "^2.10.4"
+  },
+  "description": "",
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://git.itacademy.dk/kursus/nodejs-kursus.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
